@@ -1,0 +1,65 @@
+{
+  "name": "test-driving-minista",
+  "version": "1.0.0",
+  "private": true,
+  "engines": {
+    "node": "~16",
+    "yarn": "~1",
+    "npm": "please-use-yarn"
+  },
+  "scripts": {
+    "clean": "rimraf dist",
+    "dev": "cross-env NODE_ENV=development minista",
+    "build": "cross-env NODE_ENV=production minista build",
+    "preview": "minista preview",
+    "lint:es": "eslint --ext .js,.ts .",
+    "lint:es:fix": "eslint --fix --ext .js,.ts .",
+    "lint:style": "stylelint './**/*.scss'",
+    "lint:style:fix": "stylelint --fix './**/*.scss'",
+    "format": "prettier --check --ignore-path .gitignore './**/*.{js,jsx,ts,tsx}'",
+    "format:fix": "prettier --write --ignore-path .gitignore './**/*.{js,jsx,ts,tsx}'",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "luxon": "^3.0.1",
+    "minista": "^2.8.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "@testing-library/react": "^13.3.0",
+    "@types/luxon": "^2.4.0",
+    "@types/node": "18.0.6",
+    "@types/react": "^17.0.45",
+    "@types/react-dom": "^17.0.16",
+    "@typescript-eslint/eslint-plugin": "^5.30.7",
+    "@typescript-eslint/parser": "^5.30.7",
+    "autoprefixer": "^10.4.7",
+    "cross-env": "^7.0.3",
+    "eslint": "8.20.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-n": "^15.2.4",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^6.0.0",
+    "eslint-plugin-regexp": "^1.7.0",
+    "prettier": "^2.7.1",
+    "sass": "^1.53.0",
+    "stylelint": "^14.9.1",
+    "stylelint-config-prettier": "^9.0.3",
+    "stylelint-config-recess-order": "^3.0.0",
+    "stylelint-config-recommended-scss": "^7.0.0",
+    "stylelint-config-standard": "^26.0.0",
+    "stylelint-prettier": "^2.0.0",
+    "typescript": "4.7.4"
+  },
+  "browserslist": [
+    "last 1 Chrome versions",
+    "last 1 Edge versions",
+    "last 1 Firefox versions",
+    "last 1 Safari versions",
+    "last 1 iOS versions",
+    "last 1 ChromeAndroid versions"
+  ]
+}
