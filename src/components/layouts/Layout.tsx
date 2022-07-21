@@ -5,9 +5,7 @@ const Layout: RC.WithChildren = ({ children }) => {
   return (
     <div>
       <Header />
-      <main role='main'>
-        {children}
-      </main>
+      <main role='main'>{children}</main>
       <Footer />
     </div>
   )
