@@ -8,6 +8,8 @@ const FrontPage: RC.WithoutChildren<PageProps> = () => {
   return (
     <div>
       <img src='/assets/images/example.png' alt='example.png' />
+      <img src='assets/images/example.png' alt='example.png' />
+      <img src='/sub/assets/images/example.png' alt='example.png' />
     </div>
   )
 }
