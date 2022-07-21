@@ -5,7 +5,11 @@ export const frontmatter: FrontmatterProps = {
 }
 
 const FrontPage: RC.WithoutChildren<PageProps> = () => {
-  return <>フロントページ</>
+  return (
+    <div>
+      <img src='/assets/images/example.png' alt='example.png' />
+    </div>
+  )
 }
 
 export default FrontPage
